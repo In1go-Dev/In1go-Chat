@@ -1,0 +1,38 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-1gochat-staging-64507-authRole",
+      "UnauthRoleArn": "arn:aws:iam::445774104546:role/amplify-1gochat-staging-64507-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::445774104546:role/amplify-1gochat-staging-64507-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-1gochat-staging-64507-deployment",
+      "UnauthRoleName": "amplify-1gochat-staging-64507-unauthRole",
+      "StackName": "amplify-1gochat-staging-64507",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:445774104546:stack/amplify-1gochat-staging-64507/b93dd970-de7d-11ed-a159-0a1bfff508ba",
+      "AmplifyAppId": "d3qp9yo1niomzz"
+    },
+    "categories": {
+      "analytics": {
+        "Pinpoint": {
+          "Name": "1gochat-staging",
+          "Id": "ba1c5df966c645768f99981ef6b00ad4",
+          "Region": "ap-southeast-1"
+        },
+        "1gochat": {}
+      },
+      "notifications": {
+        "Pinpoint": {
+          "Name": "1gochat-staging",
+          "Id": "ba1c5df966c645768f99981ef6b00ad4",
+          "Region": "ap-southeast-1"
+        }
+      },
+      "auth": {
+        "1goChat": {}
+      },
+      "storage": {
+        "s31gochatstorage1bce11a4": {}
+      }
+    }
+  }
+}

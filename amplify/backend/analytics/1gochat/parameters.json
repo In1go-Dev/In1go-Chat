@@ -1,0 +1,21 @@
+{
+    "appName": "1gochat",
+    "roleName": "pinpointLambdaRole13e5f680",
+    "cloudformationPolicyName": "cloudformationPolicy13e5f680",
+    "cloudWatchPolicyName": "cloudWatchPolicy13e5f680",
+    "pinpointPolicyName": "pinpointPolicy13e5f680",
+    "authPolicyName": "pinpoint_amplify_13e5f680",
+    "unauthPolicyName": "pinpoint_amplify_13e5f680",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

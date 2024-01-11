@@ -1,0 +1,14 @@
+{
+  "resourceName": "s31gochatstorage1bce11a4",
+  "bucketName": "1gochat-storage-1bce11a4",
+  "policyUUID": "fedf797c",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}

@@ -1,0 +1,39 @@
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  email: AWSEmail!
+  username: String!
+  given_name: String!
+  middle_name: String
+  family_name: String!
+  profile_image: String
+  account_status: Int!
+  principal_id: String
+  principal_name: String
+  memberships: [Room] @manyToMany(relationName: "RoomUser")
+}
+
+type Room @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  room_name: String
+  creator_id: ID
+  isGroup: Boolean!
+  message_sender: ID
+  latest_message: String
+  message_type: String
+  message_timestamp: String
+  contents: [Message] @hasMany(indexName: "byRoom", fields: ["id"])
+  members: [User] @manyToMany(relationName: "RoomUser")
+}
+
+type Message @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  content: String
+  sender_id: ID!
+  sender_name: String!
+  message_type: String!
+  attachment: String
+  isDelivered: Int!
+  isDeleted: Boolean!
+  timestamp: String!
+  room_id: ID! @index(name: "byRoom")
+}
